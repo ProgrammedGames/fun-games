@@ -18,10 +18,11 @@ body {
         </a>
         <h2>See yourself</h2>
         <h3>Camera access must be accepted before camera will show up.</h3>
-        <script>
+<video autoplay></video>
+
+<script>
   var errorCallback = function(e) {
-    console.log('Camera not found or camera access denied', e);
-    alert("Whoops! Either your camera was not found, or camera access is denied.");
+    console.log('Reeeejected!', e);
   };
 
   // Not showing vendor prefixes.
@@ -36,6 +37,5 @@ body {
     };
   }, errorCallback);
 </script>
-        <video autoplay></video>
     </body>
 </center>
